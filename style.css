@@ -7,13 +7,6 @@ body {
     height: 100vh;
 }
 
-.carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    margin-right: .76em !important;
-}
-
 .logos {
     background-color: white;
     width: 100%;
@@ -47,6 +40,8 @@ img {
 .banner {
     position: relative;
     width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .about-movie {
@@ -61,6 +56,22 @@ img {
     padding: .3em .75em;
     margin-right: .5em;
 }
+
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    margin-right: .76em !important;
+}
+
+
+
+
+
+
+
+
 
 
 

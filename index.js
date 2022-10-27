@@ -27,8 +27,8 @@ const getMovies = async () => {
     const data = await res.json();
     ;
     // console.log(data);
-    console.log(`${data.original_title} ${data.poster_path}`)
-    // movieBanner.setAttribute("src", `${baseUrl}${data.poster_path}`)
+    console.log(`${data.original_title} ${data.backdrop_path}`)
+    movieBanner.setAttribute("src", `${baseUrl}${data.backdrop_path}`)
   } catch (err) {
     console.log(err);
   }
@@ -42,3 +42,5 @@ const getMovies = async () => {
 document.addEventListener("click", getMovies);
 
 //how to adjust padding on different screen with bootstrap ?
+
+
