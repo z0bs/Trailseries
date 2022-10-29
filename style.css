@@ -1,116 +1,63 @@
-/* * {
-    box-sizing: border-box;
-} */
-
-
 body {
-    height: 100vh;
+    color: white;
 }
 
-.logos {
-    background-color: white;
-    width: 100%;
-    padding: .7em .5em;
-    position: absolute;
-    top: 0;
+a {
+    text-decoration: none;
+    color: white !important
 }
 
-.movie-logo {
-    width: 30%;
-    height: 30px;
-    margin-right: .7em;
-    border-radius: 10px;
-
+.nav-btn {
+    background-color: rgb(60, 154, 209);
+    border: none;
+    border-radius: 8px;
+    font-size: .6em;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
-.movie-logo img {
-    object-fit: cover;
-    width: 100%;
-}
-
-#navigation {
-    margin-top: 70px;
+nav {
+    box-shadow: 0px 10px 50px rgba(250, 250, 250, 0.151);
 }
 
 img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+
+.banner {
+    background: url(./assets/img/wakanda2.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    height: 80vh;
     width: 100%;
 }
 
 .banner {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    overflow: hidden;
-    border-radius: 20px;
-    border-bottom: 10px solid rgb(78, 234, 255);
+    filter: brightness(.55);
 }
 
-.about-movie {
+.banner-info {
     position: absolute;
-    top: 70%;
-    left: 10%;
-    line-height: 2;
+    top: 300px;
+    z-index: 3;
 }
 
-.rating {
-    border: 1px solid rgb(186, 179, 179);
-    padding: .3em .75em;
-    margin-right: .5em;
+.banner-info h2 {
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.572), rgba(24, 183, 211, 0.599))
+
 }
 
-
-.carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    margin-right: .76em !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width: 481px) {
-
-    .logos {
-        background: linear-gradient(to right, white, rgb(10, 235, 10), white, rgb(106, 194, 106));
-        padding: .5em;
-        position: static;
-        padding: 1em;
-    }
-
-    .movie-logo {
-        width: 10%;
-        height: 50px;
-        margin: .5em .75em;
-    }
-
-    #navigation {
-        margin-top: 0px;
-    }
-
-    img {
-        width: 70%;
-    }
-
-    .banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-    }
-
-
-    .about-movie {
-        position: absolute;
-        top: 85%;
-        left: 30%;
-    }
+.banner-info p {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.785), rgba(0, 0, 0, 0.519));
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .75em;
+    font-style: italic;
 }
